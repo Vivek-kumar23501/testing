@@ -80,7 +80,7 @@ function AllotmentForm() {
               </Col>
               <Col md={6}>
                 <FormGroup tag="fieldset">
-                  <Label>Gender</Label>
+                  <Label>Gender : </Label>
                   <FormGroup check inline>
                     <Label check><Input type="radio" name="gender" /> Male</Label>
                   </FormGroup>
@@ -95,7 +95,7 @@ function AllotmentForm() {
             </Row>
 
             <FormGroup tag="fieldset">
-              <Label>PWD</Label>
+              <Label>PWD : </Label>
               <FormGroup check inline>
                 <Label check><Input type="radio" name="pwd" /> YES</Label>
               </FormGroup>
@@ -210,7 +210,9 @@ function AllotmentForm() {
                 <FormGroup>
                   <Label>Branch</Label>
                   <Input type="select">
-                    <option value="">Select Branch</option>
+                    <option value="" style={{
+                      Width:'10px',
+                    }}>Select Branch</option>
                     <option>CSE</option>
                     <option>ECE</option>
                     <option>EEE</option>

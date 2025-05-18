@@ -10,6 +10,13 @@
   transition: transform 0.3s ease;
   z-index: 1050;
 }
+/* Navbar.css */
+.active-link {
+  background-color: #007bff !important; /* Bootstrap primary blue */
+  color: white !important;
+  border-radius: 5px;
+}
+
 
 /* On desktop sidebar is always visible */
 @media (min-width: 769px) {
@@ -30,6 +37,7 @@
   background-color: black;
   }
 }
+
 
 /* Overlay (for mobile only when sidebar open) */
 .overlay {
@@ -75,3 +83,4 @@
     padding-top: 56px; /* height of mobile topbar */
   }
 }
+
