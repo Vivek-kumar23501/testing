@@ -1,0 +1,77 @@
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 1050;
+}
+
+/* On desktop sidebar is always visible */
+@media (min-width: 769px) {
+  .sidebar {
+    transform: translateX(0) !important;
+  }
+}
+
+/* Mobile sidebar is hidden by default (shifted left) */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  .custom-toggler{
+  background-color: black;
+  }
+}
+
+/* Overlay (for mobile only when sidebar open) */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1040;
+}
+
+/* Topbar for mobile */
+.mobile-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  z-index: 1100;
+}
+
+/* Content styling */
+.app-container {
+  display: flex;
+}
+
+/* On desktop, content area margin to right of sidebar */
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+/* On mobile, content takes full width and margin-left is 0 */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding-top: 56px; /* height of mobile topbar */
+  }
+}
