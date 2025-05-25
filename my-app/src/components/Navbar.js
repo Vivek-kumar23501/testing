@@ -57,7 +57,7 @@ function Navbar() {
       {/* Mobile topbar */}
       {isMobile && (
         <div className="mobile-topbar d-flex justify-content-between align-items-center px-3 py-2 bg-light">
-          <Link to="/" className="navbar-brand text-dark fs-5 m-0">Student Dashboard</Link>
+          <Link to="/" className="navbar-brand text-primary fs-5 m-0">Student Dashboard</Link>
           <FaBars
             size={24}
             onClick={toggleSidebar}
@@ -103,9 +103,9 @@ function Navbar() {
           </NavItem>
           <NavItem>
             <Link
-              to="/tracking"
-              className={`nav-link ${activeLink === '/tracking' ? 'active-link' : 'text-dark'}`}
-              onClick={() => handleMenuClick('/tracking')}
+              to="/MessReductionTracking"
+              className={`nav-link ${activeLink === '/MessReductionTracking' ? 'active-link' : 'text-dark'}`}
+              onClick={() => handleMenuClick('/MessReductionTracking')}
             >
               Mess Reduction Tracking
             </Link>

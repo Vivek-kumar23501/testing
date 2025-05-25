@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import MessReduction from './components/MessReduction';
 import MessAllotment from './components/AllotmentForm';
-
+import MessReductionTracking from './components/MessReductionTracking';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/mess-reduction" element={<MessReduction />} />
             <Route path="/AllotmentForm" element={<MessAllotment />} />
+            <Route path="/MessReductionTracking" element={<MessReductionTracking />} />
           </Routes>
         </div>
       </div>
