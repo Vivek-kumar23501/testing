@@ -17,7 +17,8 @@ function MessReductionTracking() {
         <Card className="tracking-card shadow">
           <CardBody>
             <h3 className="tracking-title" style={{
-                color:'black'
+                color:'black',
+               
             }}>Mess Reduction Tracking</h3>
             <div className="timeline">
               {steps.map((step, index) => (
