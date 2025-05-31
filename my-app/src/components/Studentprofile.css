@@ -1,0 +1,58 @@
+/* Base styles (applies to all screen sizes unless overridden) */
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+  display: block;
+  margin: auto;
+}
+
+.edit-button {
+  display: block;
+  margin: 10px auto 30px;
+}
+
+form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive layout for smaller screens (mobile) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .edit-button {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+ .container{
+    margin-left: 300px;
+    width: 70%;
+ }
+  
+}

@@ -76,9 +76,9 @@ function Navbar() {
           <br />
           <NavItem>
             <Link
-              to="/"
-              className={`nav-link ${activeLink === '/' ? 'active-link' : 'text-dark' }`}
-              onClick={() => handleMenuClick('/')}
+              to="/StudentProfile"
+              className={`nav-link ${activeLink === '/StudentProfile' ? 'active-link' : 'text-dark' }`}
+              onClick={() => handleMenuClick('/StudentProfile')}
             >
               Student Profile
             </Link>

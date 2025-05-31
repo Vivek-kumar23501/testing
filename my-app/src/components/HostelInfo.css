@@ -1,0 +1,35 @@
+/* Animated Heading */
+.college-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #004085;
+  animation: slideIn 1.2s ease-out;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile spacing between hostel contact blocks */
+@media (max-width: 768px) {
+  .hostel-contacts > .col-md-4 {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 1rem;
+  }
+
+  .hostel-contacts > .col-md-4:last-child {
+    border-bottom: none;
+  }
+}

@@ -5,10 +5,11 @@
   flex-direction: column;
   
   padding: 1rem;
-  width: 100%;
+ 
   max-width: 500px;
   margin: 0 auto; /* Center the timeline */
 }
+
 
 .timeline-step {
   display: flex;
@@ -76,16 +77,19 @@
   background: #e91e63;
 }
 
+
 /* === Card and Container Styling === */
 .tracking-wrapper {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .tracking-card {
   border-radius: 12px;
   padding: 1rem;
   background-color:white;
+  width: 100%;
 }
 
 .tracking-title {
@@ -99,8 +103,8 @@
 }
 
 .tracking-view {
-  background-color: #f5f7fa;
-  padding: 2rem;
+  background-color:white;
+  
 }
 
 /* === Responsive Adjustments === */
@@ -123,12 +127,11 @@
 
 @media (min-width: 768px) {
   /* Styles for screens wider than 768px */
-  .tracking-view {
-    margin-left: 250px;
-  }
+ 
   .tracking-card{
-    width: 700px;
+    
     align-items: center;
     margin-left: 70px;
+    width: 70%;
   }
 }
